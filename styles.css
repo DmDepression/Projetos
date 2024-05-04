@@ -1,0 +1,122 @@
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Cor de fundo da página */
+}
+
+header {
+    background-color: rgb(72, 0, 72); /* Cor: Roxo escuro */
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff; /* Cor de fundo das seções */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: rgb(72, 0, 72); /* Cor: Roxo escuro */
+}
+
+footer {
+    background-color: rgb(72, 0, 72); /* Cor: Roxo escuro */
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+}
+
+/* Estilização dos links */
+a {
+    color: rgb(72, 0, 72); /* Cor: Roxo escuro */
+    text-decoration: none;
+    transition: color 0.3s; /* Transição suave de cor */
+}
+
+a:hover {
+    color: #333; /* Cor: Preto */
+}
+
+/* Estilização dos botões */
+button {
+    background-color: rgb(72, 0, 72); /* Cor: Roxo escuro */
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave de cor */
+}
+
+button:hover {
+    background-color: #4b0082; /* Cor: Roxo escuro mais claro */
+}
+
+/* Estilização da seção de Projetos */
+#projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projeto {
+    width: calc(33.33% - 20px); /* Para exibir 3 projetos por linha */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .projeto {
+        width: calc(50% - 20px); /* Para exibir 2 projetos por linha em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .projeto {
+        width: calc(100% - 20px); /* Para exibir 1 projeto por linha em telas ainda menores */
+    }
+}
